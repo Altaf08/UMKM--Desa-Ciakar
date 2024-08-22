@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Desa Ciakar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #171f27;
+            color: #100808;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #030201;
+            box-shadow: 0 4px 6px rgba(17, 9, 9, 0.057);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .navbar-brand img {
+            max-height: 40px; /* Adjust logo size */
+            margin-right: 10px; /* Space between logo and text */
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url(background-umkm.jpg) no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(254, 251, 251);
+            background-attachment: fixed;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            animation: fadeInUp 2s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* About Section */
+        #about {
+            background-color: #cdc9c9;
+            padding: 60px 0;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #about .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        #about .about-left, #about .about-right {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        #about .about-left h3, #about .about-right h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #about .about-left p, #about .about-right p {
+            font-size: 1.1rem;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        #about ol {
+            margin-bottom: 1rem;
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #060200;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo-umkm-url.png" alt="Logo"> UMKM Desa Ciakar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Selamat Datang di UMKM Desa Ciakar</h1>
+            <p class="lead">Produk lokal berkualitas tinggi dari pengrajin terbaik kami.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Sejarah UMKM Desa Ciakar</h3>
+                    <p>UMKM Desa Ciakar didirikan dengan tujuan untuk memberdayakan masyarakat lokal melalui pengembangan
+                        produk-produk unggulan yang memiliki nilai jual tinggi. Berawal dari inisiatif beberapa pengrajin lokal
+                        yang ingin memperkenalkan hasil karya mereka ke pasar yang lebih luas, UMKM Desa Ciakar kini telah
+                        berkembang dengan berbagai produk berkualitas.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Visi</h3>
+                    <p>Menjadi pusat pengembangan produk lokal yang inovatif dan berkelanjutan, serta meningkatkan
+                        kesejahteraan masyarakat Desa Ciakar.</p>
+                    <h3>Misi</h3>
+                    <ol>
+                        <li>Memberdayakan pengrajin lokal melalui pelatihan dan pendampingan.</li>
+                        <li>Mengembangkan produk-produk berkualitas tinggi yang memiliki daya saing di pasar nasional dan
+                            internasional.</li>
+                        <li>Meningkatkan kesejahteraan masyarakat melalui peningkatan pendapatan dari hasil penjualan produk
+                            UMKM.</li>
+                        <li>Mempromosikan budaya dan kearifan lokal melalui produk-produk yang dihasilkan.</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h3>Nilai-Nilai Kami</h3>
+                    <ol>
+                        <li>Kami berkomitmen untuk menghasilkan produk-produk berkualitas tinggi yang memenuhi standar
+                            terbaik.</li>
+                        <li>Kami terus berinovasi dalam proses produksi dan pengembangan produk untuk memenuhi kebutuhan
+                            pasar yang terus berkembang.</li>
+                        <li>Kami mengutamakan praktik produksi yang ramah lingkungan dan berkelanjutan.</li>
+                        <li>Kami percaya bahwa kekuatan komunitas adalah kunci keberhasilan, dan kami berusaha untuk
+                            memberdayakan setiap anggota komunitas kami.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Produk Lokal Kami</h2>
+
+            <!-- Product Dodol Pak Oyot -->
+            <div class="product-item mb-5 text-center">
+                <h3>Dodol Pak Oyot</h3>
+                <p><strong>Pemilik Usaha:</strong> Tn. Syamsul Bahri</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="DPO/original.jpg" alt="Dodol Pak Oyot Original" class="img-fluid">
+                        <p class="mt-2"><strong>Original</strong></p>
+                        <p>cita rasa yang sangat legit dan nikmat, membuatnya menjadi favorit banyak orang.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="DPO/wijen.jpg" alt="Dodol Pak Oyot Wijen" class="img-fluid">
+                        <p class="mt-2"><strong>Wijen</strong></p>
+                        <p>kenikmatan tradisional dengan sentuhan modern, menjadikannya pilihan 
+                        yang istimewa dan berbeda dari yang lain.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="DPO/durian.jpg" alt="Dodol Pak Oyot Durian" class="img-fluid">
+                        <p class="mt-2"><strong>Durian</strong></p>
+                        <p>pilihan tepat untuk mereka yang menginginkan kelezatan otentik dengan sentuhan durian yang menggoda..</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Products -->
+            <!-- Keripik Bawang -->
+            <div class="product-item mb-5 text-center">
+                <h3>Keripik Bawang</h3>
+                    <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="keripik bawang/keripik bawang 1.jpg" alt="Keripik Bawang" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="keripik bawang/keripik bawang 3.jpg" alt="Keripik Bawang" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="keripik bawang/keripik bawang 2.jpg" alt="Keripik Bawang" class="img-fluid mx-auto d-block">
+                    </div>
+                    <p>Keripik bawang adalah camilan yang sangat populer di Indonesia, dikenal karena rasa 
+                    gurih dan teksturnya yang renyah.</p>
+                    <p><strong>Pemilik Usaha:</strong> Ny. Siti Suparti</p>
+                </div>
+            </div>
+        </div>
+
+                <!-- Susu Kambing Etawa -->
+            <div class="product-item mb-5 text-center">
+                <h3>Susu Kambing Etawa</h3>
+                    <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="GOAT MILK PROMOTION/etawa 1.jpg" alt="Susu Kambing Etawa" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="GOAT MILK PROMOTION/etawa 3.jpg" alt="Susu Kambing Etawa" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="GOAT MILK PROMOTION/etawa 2.jpg" alt="Susu Kambing Etawa" class="img-fluid mx-auto d-block">
+                    </div>
+                    <p>Susu ini mengandung berbagai nutrisi penting seperti protein berkualitas tinggi, kalsium, fosfor, vitamin A,  
+                    vitamin B, dan vitamin D. Nutrisi ini penting untuk pertumbuhan dan pemeliharaan tulang serta kesehatan umum.</p>
+                    <p><strong>Pemilik Usaha:</strong> Tn. H. Achmad Haerudin</p>
+                </div>
+            </div>
+        </div>
+
+                <!-- Anyaman Creba -->
+            <div class="product-item mb-5 text-center">
+                <h3>Anyaman Creba</h3>
+                    <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="anyaman creba/creab 1.jpg" alt="Anyaman Creba" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="anyaman creba/creab 2.jpg" alt="Anyaman Creba" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="anyaman creba/creab 3.jpg" alt="Anyaman Creba" class="img-fluid mx-auto d-block">
+                    </div>
+                    <p>Produk Anyaman Creba dikenal karena kekuatan dan keindahannya yang dibuat dari bambu pilihan dan
+                    dirangkai dengan teliti oleh pengrajin ahli.</p>
+                    <p><strong>Pemilik Usaha:</strong> Tn. Armaning</p>
+                    <p><strong>Instagram:</strong> anyaman_bambu_</p>
+                </div>
+            </div>
+        </div>
+
+                <!-- Anyaman Tudung Bambu  -->
+            <div class="product-item mb-5 text-center">
+                <h3>Anyaman Tudung Bambu </h3>
+                    <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="anyaman tudung/tudung 1.jpg" alt="Anyaman Tudung Bambu " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="anyaman tudung/tudung 2.jpg" alt="Anyaman Tudung Bambu " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="anyaman tudung/tudung 3.jpg" alt="Anyaman Tudung Bambu " class="img-fluid mx-auto d-block">
+                    </div>
+                    <p>Produk ini dibuat dengan teknik anyaman tradisional yang menghasilkan tudung berkualitas, kuat,
+                    dan tahan lama.</p>
+                    <p><strong>Pemilik Usaha:</strong> Tn. Saadih</p>
+                </div>
+            </div>
+        </div>
+
+                <!-- Sulis Alfionis Craft  -->
+            <div class="product-item mb-5 text-center">
+                <h3>Sulis Alfionis Craft </h3>
+                    <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="SA Craft/sepatu  SA.jpg" alt="Sulis Alfionis Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="SA Craft/sandal SA.jpg" alt="Sulis Alfionis Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="SA Craft/Tas SA.jpg" alt="Sulis Alfionis Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <p>Setiap produk rajut memiliki desain yang elegan dan unik, dibuat dengan tangan oleh pengrajin berpengalaman.</p>
+                    <p><strong>Pemilik Usaha:</strong> Ny. Lilia Prihatini</p>
+                </div>
+            </div>
+        </div>
+
+                <!-- Rosita Craft  -->
+            <div class="product-item mb-5 text-center">
+                <h3>Rosita Craft </h3>
+                    <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="rosita craft/Tas cokelat rosita.jpg" alt="Rosita Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="rosita craft/tas hitam rosita.jpg" alt="Rosita Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="rosita craft/tas biru rosita.jpg" alt="Rosita Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <p>Tas rajut yang dibuat dengan ketelitian dan menggunakan bahan berkualitas tinggi, cocok untuk
+                    segala aktivitas.</p>
+                    <p><strong>Pemilik Usaha:</strong> Ny. Rosita</p>
+                </div>
+            </div>
+        </div>
+
+                <!-- Bouquettzii Craft  -->
+            <div class="product-item mb-5 text-center">
+                <h3>Bouquettzii Craft </h3>
+                    <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="bouqet/Bouqet 1.jpg" alt="Bouquettzii Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="bouqet/Bouqet 2.jpg" alt="Bouquettzii Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="bouqet/Bouqet  3.jpg" alt="Bouquettzii Craft " class="img-fluid mx-auto d-block">
+                    </div>
+                    <p>Bouquettzii Craft menyediakan buket untuk berbagai acara seperti pernikahan, ulang tahun,
+                    wisuda, dan hari jadi. Mereka juga menawarkan buket khusus untuk hadiah dan dekorasi rumah..</p>
+                    <p><strong>Pemilik Usaha:</strong> Ny. Annazilah</p>
+                </div>
+
+            <!-- Other products like Susu Kambing Etawa, Anyaman Creba, etc., can follow a similar structure -->
+
+            <!-- Example product section ends -->
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Kontak Kami</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Kontak Umum</h3>
+                <p>Untuk informasi lebih lanjut atau pertanyaan mengenai produk, silakan hubungi kami melalui salah satu nomor kontak di bawah ini:</p>
+                <ul class="list-unstyled">
+                    <li><strong>Dodol Pak Oyot:</strong> Syamsul Bahri - 0813-1165-0180</li>
+                    <li><strong>Keripik Bawang:</strong> Siti Suparti - 0895-3595-71583</li>
+                    <li><strong>Susu Kambing Etawa:</strong> H. Achmad Haerudin - 0896-6898-2856</li>
+                    <li><strong>Anyaman Creba:</strong> Armaning - <i>(no contact not provided)</i></li>
+                    <li><strong>Anyaman Tudung Bambu:</strong> Saadih - 0838-1960-6752</li>
+                    <li><strong>Rosita Craft:</strong> Rosita - 0852-1611-5961</li>
+                    <li><strong>Lilis Craft:</strong> Lilis - 0812-8660-2540</li>
+                    <li><strong>Bouquet:</strong> Nazilah - 0895-3312-33177</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Formulir Kontak</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KKN Karya Nusantara FEBI UCA 2024.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
